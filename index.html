@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website resmi Cakra Hoist dan Aneka Mesin.">
   <title>Cakra Hoist</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -80,6 +82,16 @@
     .floating-admin i {
       font-size: 28px;
     }
+
+    .floating-admin a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: inherit;
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+    }
   </style>
 </head>
 <body>
@@ -116,8 +128,13 @@
 
   <div class="floating-admin">
     <a href="#admin" title="Admin">
-      <i class="fas fa-user-shield"></i>
+      <i class="fas fa-user-shield" aria-hidden="true"></i>
+      <span class="sr-only">Admin</span>
     </a>
   </div>
+
+  <section id="admin" style="display: none;">
+    <!-- Konten Admin Placeholder -->
+  </section>
 </body>
 </html>
