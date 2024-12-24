@@ -1,116 +1,123 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Sederhana</title>
- <style>
-   <style>
-  .floating-admin {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #00796b; /* Warna latar ikon */
-    color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    z-index: 1000;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
+  <title>Cakra Hoist</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #e9f5f2;
+      color: #333;
+    }
 
-  .floating-admin:hover {
-    transform: scale(1.1);
-    background-color: #00594b; /* Warna saat dihover */
-  }
+    header {
+      background: linear-gradient(45deg, #00aaff, #00d4aa);
+      color: white;
+      padding: 20px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-  .floating-admin i {
-    font-size: 24px;
-  }
-</style>
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
 
-  body {
-    font-family: 'Poppins', sans-serif; /* Gaya font modern */
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #e9f5f2; /* Warna latar yang lembut */
-    color: #333;
-  }
-  header {
-    background: linear-gradient(45deg, #00aaff, #00d4aa); /* Gradasi warna */
-    color: white;
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-  }
-  nav a:hover {
-    text-decoration: underline;
-  }
-  main {
-    padding: 30px;
-  }
-  section {
-    margin-bottom: 30px;
-  }
-  section h2 {
-    color: #00796b;
-  }
-  footer {
-    margin-top: 20px;
-    padding: 10px 0;
-    background: #333;
-    color: white;
-    font-size: 14px;
-  }
-</style>
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      color: #00796b;
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 10px 0;
+      background: #333;
+      color: white;
+      font-size: 14px;
+    }
+
+    .floating-admin {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00796b;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      z-index: 1000;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .floating-admin:hover {
+      transform: scale(1.1);
+      background-color: #00594b;
+    }
+
+    .floating-admin i {
+      font-size: 28px;
+    }
+  </style>
 </head>
 <body>
- <header>
-  <h1>Selamat Datang</h1>
-  <p>CAKRA HOIST DAN ANEKA MESIN</p>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">Tentang</a>
-    <a href="#contact">Kontak</a>
-  </nav>
-</header>
+  <header>
+    <h1>Selamat Datang</h1>
+    <p>CAKRA HOIST DAN ANEKA MESIN</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Tentang</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
 
   <main>
     <section id="home">
       <h2>Halaman Utama</h2>
       <p>Ini adalah website sederhana Anda!</p>
     </section>
+
     <section id="about">
       <h2>Tentang</h2>
       <p>Website ini dibuat menggunakan GitHub Pages.</p>
     </section>
+
     <section id="contact">
       <h2>Kontak</h2>
       <p>Email: contoh@email.com</p>
     </section>
   </main>
-  <footer>
-    <p>© 2024 Website Anda</p>
-  </footer>
-  <div class="floating-admin">
-  <a href="#admin" title="Admin">
-    <i class="fas fa-user-shield"></i>
-  </a>
-</div>
 
+  <footer>
+    &copy; 2024 Website Anda
+  </footer>
+
+  <div class="floating-admin">
+    <a href="#admin" title="Admin">
+      <i class="fas fa-user-shield"></i>
+    </a>
+  </div>
 </body>
 </html>
